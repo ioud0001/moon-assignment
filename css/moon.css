@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/***********************************
+		REFERENCES
+font-sizes
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1rem
+0.618rem
+
+font-families
+Droid Serif, Droid Sans
+
+colors
+#000000
+#222222
+#333333
+#D4D4D4
+#CC3300
+#BADA55
+#FFFFFF
+plus the shadow for the text
+
+
+***********************************/
+
+*{
+	padding:0;
+	margin:0;
+}
+
+/***********************************
+		DEFAULTS
+***********************************/
+body{
+	background-color: #222;
+}
+h1, h2, h3, h4{
+	font-family:serif;  /* you need a font stack here */
+}
+h1{
+
+}
+h2{
+	
+}
+h3{
+	
+}
+h4{
+	
+}
+p, li, a{
+	font-family: sans-serif; /* you need a font stack here */
+}
+img{
+	width:90%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none;
+}
+a:link, a:visited{
+	transition: all 0.8s linear;
+	color: #CC3300;
+}
+a:hover, a:active, a:focus{
+	text-decoration: none;
+	color: #BADA55;
+}
+
+/***********************************
+		LAYOUT
+***********************************/
+.wrapper{
+	width:90%;
+	max-width: 1020px;
+	min-width: 400px;
+	margin:0 auto 2.0rem;
+	background-color: #d4d4d4;
+}
+.header{
+	background-color: #000;
+    min-height: 400px;
+	background-image: url(../img/moon-header.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.main{
+	margin-left: 0 auto 0 auto;
+}
+.footer{
+	
+}
+
+/***********************************
+		LINKS 
+-for any that are different than the default
+***********************************/
+
+.footer a:link,
+.footer a:visited{
+	display: block;
+	text-decoration: none;
+}
+.footer a:hover,
+.footer a:active,
+.footer a:focus{
+	text-decoration: underline;
+}
+
+
+/***********************************
+		CONTENT
+***********************************/
+.header h1{
+	color: #FFFFFF;
+	font-size: 6.854rem;
+	width: 50%;
+	text-align: right;
+}
+.main *, .footer p{
+	margin: 20px;
+}
+
+.main h2, .main h3{
+	text-shadow: 1px 1px 3px #222222;
+	/*#BADA55;*/
+	color: #CC3300;
+}
+.main h2{
+	font-size: 4.236rem;
+}
+.main h3{
+	font-size: 2.618rem;
+}
+.main p{
+	font-size: 1.618rem;
+	line-height: 130%;
+}
+.main img{
+	/* use border-radius to crop image */
+	/* choose a width percentage for the image too */
+	border-radius: 40%;
+	width: 20%;
+}
+.left{
+	float:left;
+	margin-right:10px;
+	margin-bottom: 10px;
+}
+.footer p{
+    font-size: 0.618rem;
+
+}
+.footer{
+		background-color: #333333;
+			font-size: 1rem;
+	    -webkit-columns: 50px 2; /* Chrome, Safari, Opera */
+    -moz-columns: 50px 2; /* Firefox */
+    columns: 50px 2;
+	
+	    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+.footer li{
+    /* make these 50% the width of the footer */
+/*
+	column-count: 2;
+	column-gap: 30%;
+	width: 50%;
+*/
+
+	font-size: 1rem;
+
+}
