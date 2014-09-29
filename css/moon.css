@@ -34,11 +34,14 @@ plus the shadow for the text
 /***********************************
 		DEFAULTS
 ***********************************/
+*{
+	margin-left: 0;
+}
 body{
 	background-color: #222;
 }
 h1, h2, h3, h4{
-	font-family:serif;  /* you need a font stack here */
+	font-family: 'Droid Serif', serif;  /* you need a font stack here */
 }
 h1{
 
@@ -53,7 +56,7 @@ h4{
 	
 }
 p, li, a{
-	font-family: sans-serif; /* you need a font stack here */
+	font-family: 'Droid Sans', sans-serif; /* you need a font stack here */
 }
 img{
 	width:90%;
@@ -154,27 +157,23 @@ a:hover, a:active, a:focus{
 }
 .footer p{
     font-size: 0.618rem;
+	margin-left: 0;
+	clear: both;
+	color: white;
+	padding-top: 5px;
+	line-height: 200%;
 
 }
 .footer{
+		margin-left: 0;
 		background-color: #333333;
-			font-size: 1rem;
-	    -webkit-columns: 50px 2; /* Chrome, Safari, Opera */
-    -moz-columns: 50px 2; /* Firefox */
-    columns: 50px 2;
-	
-	    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 40px; /* Firefox */
-    column-gap: 40px;
+		font-size: 1rem;
+		padding: 50px;
 }
 .footer li{
     /* make these 50% the width of the footer */
-/*
-	column-count: 2;
-	column-gap: 30%;
-	width: 50%;
-*/
-
 	font-size: 1rem;
-
+	width: 50%;
+	line-height: 200%;
+	float: left;
 }
